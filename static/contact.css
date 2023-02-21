@@ -1,0 +1,21 @@
+@import url('fonts.css');
+
+body {
+    background-color: #0b0b0b;
+}
+
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.text-container h1{
+    font-family: 'Minecraftia';
+    font-size: 120px;
+    color: #81c183;
+    letter-spacing: 10px;
+    cursor: default;
+}

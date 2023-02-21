@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Ginger";
+    src: url('fonts/Ginger/F37Ginger.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Ginger/F37Ginger.eot'),
+         url('fonts/Ginger/F37Ginger.woff') format('woff'), 
+         url('fonts/Ginger/F37Ginger.woff2') format('woff2'), 
+         url('fonts/Ginger/F37\ Ginger.ttf')  format('truetype'),
+         url('fonts/Ginger/F37Ginger.svg') format('svg');
+}
+
+
+@font-face {
+    font-family: "Mincraftia";
+    src: url('fonts/Minecraftia/Minecraftia-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Minecraftia/Minecraftia-Regular.eot'),
+         url('fonts/Minecraftia/Minecraftia-Regular.woff') format('woff'), 
+         url('fonts/Minecraftia/Minecraftia-Regular.woff2') format('woff2'), 
+         url('fonts/Minecraftia/Minecraftia-Regular.ttf')  format('truetype'),
+         url('fonts/Minecraftia/Minecraftia-Regular.svg') format('svg');
+}
