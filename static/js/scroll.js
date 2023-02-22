@@ -1,17 +1,21 @@
-let prev_scroll_pos = window.pageYOffset;
+window.addEventListener('scroll', () => {
+    const scroll_down = document.querySelector('.scroll-down');
+    const scroll_top = window.pageYOffset || document.documentElement.scroll_top;
 
-window.onscroll = function() {
-    
-  let current_scroll_pos = window.pageYOffset;
+    const sections = document.querySelectorAll('.hide-scroll');
+    let scroll_hide = false;
 
-  if (prev_scroll_pos > current_scroll_pos) {
-    document.querySelector('.navbar').classList.remove('hidden');
-  } 
-  
-  else {
-    document.querySelector('.navbar').classList.add('hidden');
-  }
-  
-  prev_scroll_pos = current_scroll_pos;
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5) {
+        scroll_hide = true;
+      }
+    });
 
-}
+    if (scroll_top > 0 || scroll_hide) {
+        scroll_down.classList.add('hidden');
+    } 
+    else {
+        scroll_down.classList.remove('hidden');
+    }
+  });

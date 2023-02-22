@@ -36,7 +36,7 @@ body {
     color: #ebcb8b;
     letter-spacing: 10px;
     cursor: default;
-    margin-top: -10%;
+    margin-top: 5%;
 }
 
 .founder-text {
@@ -45,7 +45,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -17.5%;
 }
 
 .founder-text h3{
@@ -85,7 +84,6 @@ body {
     font-size: 16px;
 }
 
-
 .me {
     position: absolute;
     top: 0;
@@ -97,6 +95,52 @@ body {
     transition-delay: 0.3s;
 }
 
+.laser-container{
+    position: relative;
+    height: 2px;
+}
+
+.laser1 {
+    position: absolute;
+    top: 50%;
+    left: -200%;
+    opacity: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #09c9ff;
+    animation: grow 0.5s ease-out forwards;;
+    transition: all 1.5s ease;
+    transform-origin: left;
+    z-index: -1;
+}
+
+.laser2 {
+    position: absolute;
+    top: 50%;
+    left: -200%;
+    opacity: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #ff2b2b;
+    animation: grow 0.5s ease-out forwards;;
+    transition: all 3s ease;
+    transform-origin: left;
+    z-index: -1;
+}
+
+.laser3 {
+    position: absolute;
+    top: 50%;
+    left: -200%;
+    opacity: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #8fff09;
+    animation: grow 0.5s ease-out forwards;;
+    transition: all 2s ease;
+    transform-origin: left;
+    z-index: -1;
+}
 
 .founder-text:hover .foundme{
     opacity: 1;
@@ -107,24 +151,32 @@ body {
     transform: rotate(-7deg);
 }
 
+.founder-text:hover .laser1 {
+    opacity: 1;
+    transform: rotate(-10deg);
+    width: 450%;
+}
+
+.founder-text:hover .laser2 {
+    opacity: 1;
+    transform: rotate(-12deg);
+    width: 450%;
+}
+
+.founder-text:hover .laser3 {
+    opacity: 1;
+    transform: rotate(-8deg);
+    width: 450%;
+}
+
 
 .about-me{
     font-family: Ginger;
     font-size: 32px;
     color: #e4e4e4;
     cursor: default;
-    margin-top: -15%;
 }
 
-
-.about-ennui{
-    font-family: Ginger;
-    font-size: 28px;
-    color: #e4e4e4;
-    cursor: default;
-    margin-top: -15%;
-    width: 70%;
-}
 
 .scroll-down {
     position: absolute;
@@ -133,8 +185,9 @@ body {
     z-index: 1;
     transform: translateX(-50%);
     animation: scroll-down 1.5s ease infinite;
-  }
+}
   
+
 .indicator {
     display: inline-block;
     width: 10px;
@@ -144,6 +197,11 @@ body {
     border-width: 0 2px 2px 0;
     transform: rotate(20deg);
     -webkit-transform: rotate(45deg);
+}
+
+
+.hidden {
+    display: none;
 }
 
   
