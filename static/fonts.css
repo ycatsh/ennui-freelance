@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Ginger";
+    font-family: Ginger;
     src: url('fonts/Ginger/F37Ginger.eot?#iefix') format('embedded-opentype'),
          url('fonts/Ginger/F37Ginger.eot'),
          url('fonts/Ginger/F37Ginger.woff') format('woff'), 
@@ -10,7 +10,7 @@
 
 
 @font-face {
-    font-family: "Mincraftia";
+    font-family: Minecraftia;
     src: url('fonts/Minecraftia/Minecraftia-Regular.eot?#iefix') format('embedded-opentype'),
          url('fonts/Minecraftia/Minecraftia-Regular.eot'),
          url('fonts/Minecraftia/Minecraftia-Regular.woff') format('woff'), 

@@ -1,4 +1,4 @@
-@import url('fonts.css');
+@import url('../static/fonts.css'); 
 
 body {
     background-color: #0b0b0b;
@@ -13,7 +13,7 @@ body {
 }
 
 .text-container h1{
-    font-family: 'Minecraftia';
+    font-family: Minecraftia;
     font-size: 120px;
     color: #81c183;
     letter-spacing: 10px;
