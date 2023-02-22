@@ -55,19 +55,21 @@ header {
 }
 
 .navbar-center a{
+    font-family: Ginger;
     color: #e4e4e4;
     text-decoration: none;
     transition: all .5s ease-in-out;
     padding: 0 30px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .navbar-right a{
+    font-family: Ginger;
     color: #e4e4e4;
     text-decoration: none;
     transition: all .5s ease-in-out;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .navbar-center a:hover, .navbar-right a:hover {

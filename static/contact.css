@@ -22,6 +22,10 @@ body {
     margin-top: -0.5%;
 }
 
+.contact-info a{
+    text-decoration: none;
+}
+
 .contact-info h1{
     font-family: Minecraftia;
     font-size: 120px;
@@ -60,20 +64,18 @@ body {
     letter-spacing: 2px;
     color: #e4e4e4;
     cursor: default;
+    margin-left: 22%;
 }
 
 
 .icons {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 100px;
 }
 
 .icons img{
     margin-top: 100%;
-    display: inline-block;
-    align-items: center;
-    justify-content: space-evenly;
     transition: all 0.5s ease;
 }
 
