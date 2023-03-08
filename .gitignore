@@ -1,8 +1,11 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,flask,dotenv,windows,linux,macos
+#Created by https://www.toptal.com/developers/gitignore/api/python,flask,dotenv,windows,linux,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,flask,dotenv,windows,linux,macos
 
 ### dotenv ###
 .env
+
+### htaccess ###
+.htaccess
 
 ### Flask ###
 instance/*
