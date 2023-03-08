@@ -4,9 +4,6 @@
 ### dotenv ###
 .env
 
-### htaccess ###
-.htaccess
-
 ### Flask ###
 instance/*
 !instance/.gitignore
