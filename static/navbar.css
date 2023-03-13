@@ -98,8 +98,9 @@ header {
     .navbar-center{
         position: fixed;
         flex-direction: column;
-        text-align: center;
-        justify-content: center;
+        text-align: right;
+        align-items: right;
+        justify-content: right;
         gap: 0;
         left: 100%;
         top: 12%;
@@ -120,10 +121,28 @@ header {
     }
 
     .navbar-center a{
-        margin: 8px 0;
+        margin: 8px 0;  
     }
 
     .navbar-center.active{
         left: 42%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .navbar-center.active{
+            left: 37.5%;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .navbar-center.active{
+            left: 33.5%;
+        }
+    }
+    
+    @media only screen and (max-width: 300px) {
+        .navbar-center.active{
+            left: 32.5%;
+        }
     }
 }
