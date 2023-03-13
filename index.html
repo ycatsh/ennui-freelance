@@ -1,13 +1,7 @@
 <html>
   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="static/index.css">
-      
-      <script src="static/js/scroll.js"></script>
-  </head>
-
-<html>
-  <head>
-      <link href="https://fonts.cdnfonts.com/css/ginger" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="static/navbar.css">
       <link rel="icon" type="image/x-icon" href="static/imgs/favicon.png">
       <title>Ennui Freelance</title>
@@ -24,63 +18,64 @@
             <a href="/">INTRO</a>
             <a href="work/">WORK</a>
             <a href="about/">ABOUT</a>
+            <a href="contact/" id="hide-ham">CONTACT</a>
           </div>
 
           <div class="navbar-right">
             <a href="contact/">CONTACT</a>
           </div>
 
-      </nav>
-      
-      <script src="static/js/nav-scroll.js"></script>
+          <div class="hamburger">
+            <img src="static/imgs/ham.png">
+          </div>
 
+      </nav>
+
+      <script src="static/js/hamburger.js"></script>
+      <script src="static/js/nav-scroll.js"></script>
+      <script src="static/js/scroll.js"></script>
+      
     </header>
 
-    <div>
+
+    <div class="container">
+
+      <div class="scroll-down">
+        <div class="indicator"></div>
+      </div>
+
+      <section>
+        <div class="text-container">
+          <h1><span class="type"></span></h1>
+          <h3 id="sub-text"></h3>
+        </div>
+      </section>
+
+      <section class="hide-scoll">
+        <div class="about-ennui">
+          <h1>we provide custom solutions for our clients to uplift their digital presence and really highlight the relevance of design and software in creative projects.</h1>
+        </div>
+      </section>
       
-<div class="container">
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <div class="scroll-down">
-    <div class="indicator"></div>
-  </div>
+      <script>
+        var typed = new Typed(".type", {
+          strings: ['Ennui'],
+          typeSpeed: 300,
+          loop: false,
+          showCursor: false,
+          
+          onComplete: function() {
+              var subText = document.getElementById('sub-text');
+              subText.innerHTML = 'freelance';
+              $(subText).hide().fadeIn(500);
+          }
+        })
 
-  <section>
-    <div class="text-container">
-      <h1><span class="type"></span></h1>
-      <h3 id="sub-text"></h3>
-    </div>
-  </section>
-
-  <section class="hide-scoll">
-    <div class="about-ennui">
-      <h1>we provide custom solutions for our clients to uplift their digital presence and really highlight the relevance of design and software in creative projects.</h1>
-    </div>
-  </section>
-  
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-  var typed = new Typed(".type", {
-    strings: ['Ennui'],
-    typeSpeed: 300,
-    loop: false,
-    showCursor: false,
-    
-    onComplete: function() {
-        var subText = document.getElementById('sub-text');
-        subText.innerHTML = 'freelance';
-        $(subText).hide().fadeIn(500);
-    }
-  })
-
-</script>
-
-</div>
-
-
+      </script>
 
     </div>
-    
   </body>
 </html>

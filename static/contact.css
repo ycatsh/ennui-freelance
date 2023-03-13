@@ -84,3 +84,46 @@ body {
     transform: scale(1.1);
     color: #81c183;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .links {
+        margin-top: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+    .links {
+        margin-top: 70%;
+    }
+
+    .contact-info h1{
+        font-size: 100px;
+    }
+
+    .contact-info h3{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .contact-info h1{
+        font-size: 90px;
+    }
+    .contact-info h3{
+        font-size: 22px;
+    }
+    .links {
+        margin-top: 90%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .contact-info h3{
+        font-size: 14px;
+    }
+    .contact-info h1 {
+        font-size: 60px;
+    }
+}

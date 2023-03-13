@@ -54,6 +54,10 @@ header {
     flex: 0 0 auto;
 }
 
+#hide-ham{
+    display: none;
+}
+
 .navbar-center a{
     font-family: Ginger;
     color: #e4e4e4;
@@ -74,4 +78,52 @@ header {
 
 .navbar-center a:hover, .navbar-right a:hover {
     color: #a37ff7;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }   
+
+    .navbar-center{
+        position: fixed;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 0;
+        left: 100%;
+        top: 12%;
+        width: 100%;
+        transition: 0.2s;
+    }
+
+    #hide-ham{
+        display: flex;
+    }
+
+    .navbar-right{
+        display: none;
+    }
+
+    .navbar-center {
+        margin-left: 0;
+    }
+
+    .navbar-center a{
+        margin: 8px 0;
+    }
+
+    .navbar-center.active{
+        left: 42%;
+    }
 }
