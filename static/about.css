@@ -177,6 +177,13 @@ body {
     cursor: default;
 }
 
+.about-me h2{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 18px;
+    color: #a5a6a8;
+}
+
 
 .scroll-down {
     position: absolute;
@@ -228,6 +235,10 @@ body {
     .about-me{
         font-size: 24px;
     }
+
+    .about-me h2{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 470px) {
@@ -237,6 +248,10 @@ body {
 
     .about-me{
         font-size: 18px;
+    }
+
+    .about-me h2{
+        font-size: 14px;
     }
 }
 
