@@ -1,4 +1,3 @@
-# ennui
-freelanced software meets art 
-
-this repo hosts my freelance service website, it has been made static using `flask_frozen`
+<samp>
+This repository hosts the website of my freelance service, <a href="https://ennuifreelance.com">Ennui</a>. The website has been made static using <code>Flask-Frozen</code>.
+</samp>
