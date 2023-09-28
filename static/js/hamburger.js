@@ -1,12 +1,9 @@
-const hamburger = document.querySelector('.hamburger');
-const navCenter = document.querySelector('.navbar-center');
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const nav_menu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navCenter.classList.toggle('active');
-})
-
-document.querySelectorAll('a.navbar-center').forEach(n => n.addEventListener('click'), () => {
-    hamburger.classList.remove('active');
-    navCenter.classList.remove('active');
-})
+    hamburger.addEventListener("click", function () {
+        nav_menu.classList.toggle("active");
+        nav_menu.classList.toggle("slide-down");
+    });
+});

@@ -54,10 +54,6 @@ header {
     flex: 0 0 auto;
 }
 
-#hide-ham{
-    display: none;
-}
-
 .navbar-center a{
     font-family: Ginger;
     color: #e4e4e4;
@@ -85,6 +81,22 @@ header {
     cursor: pointer;
 }
 
+.nav-menu {
+    display: flex;
+    padding: 5px;
+    justify-content: flex-end;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu a{
+    display: none;
+}
+
+.nav-menu.slide-down {
+    transform: translateY(0%);
+}
+
 .bar {
     display: block;
     transition: all 0.2s ease-in-out;
@@ -93,39 +105,45 @@ header {
 @media only screen and (max-width: 768px) {
     .hamburger {
         display: block;
-    }   
-
-    .navbar-center{
-        position: fixed;
-        flex-direction: column;
-        text-align: right;
-        align-items: right;
-        justify-content: right;
-        gap: 0;
-        left: 100%;
-        top: 12%;
-        width: 100%;
-        transition: 0.2s;
     }
 
-    #hide-ham{
-        display: flex;
-    }
-
-    .navbar-right{
+    .navbar-right, .navbar-center{
         display: none;
     }
 
-    .navbar-center {
-        margin-left: 0;
+    header{
+        background-color: #0b0b0b;
+        z-index: 99;
+        height: 70px;
     }
 
-    .navbar-center a{
-        margin: 8px 0;  
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background-color: #0b0b0b;
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+        display: none;
     }
 
-    .navbar-center.active{
-        left: 42%;
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        display: flex;
+        color: #e4e4e4;
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .nav-menu a:hover {
+        color: #a37ff7;
     }
 
     @media only screen and (max-width: 600px) {

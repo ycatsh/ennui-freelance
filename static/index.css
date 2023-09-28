@@ -2,6 +2,7 @@
 
 body {
     background-color: #0b0b0b;
+    overflow-x: hidden;
 }
 
 .container{
@@ -101,6 +102,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .text-container h3 {
+        margin-top: 10%;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .text-container h3 {
         margin-top: 12.5%;
@@ -124,7 +131,7 @@ body {
         font-size: 90px;
     }
     .text-container h3 {
-        margin-top: 17.5%;
+        margin-top: 18.5%;
     }
     .about-ennui{
         font-size: 18px;
@@ -137,7 +144,7 @@ body {
     }
     .text-container h3 {
         font-size: 14px;
-        margin-top: 17.5%;
+        margin-top: 19.5%;
     }
     .about-ennui{
         font-size: 16px;
